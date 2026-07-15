@@ -1,0 +1,280 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\EasySet.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""afxres.rc""     // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\EasySet.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 196, 206
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "이지세팅 - "
+FONT 12, "HY헤드라인M", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,174,161,14,16,NOT WS_VISIBLE
+    LTEXT           "이지세팅 버전 1.2\n\n만든이: 고승근\n연락처: +821094402220\n\nCopyright (C) 2020",IDC_STATIC,7,143,92,56,SS_NOPREFIX
+    CONTROL         133,IDC_PICTURE1,"Static",SS_BITMAP,7,7,181,136
+END
+
+IDD_EASYSET_DIALOG DIALOGEX 0, 0, 200, 160
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "이지세팅(농림축산식품부) - ver 1.2"
+MENU IDR_MENU1
+FONT 12, "HY헤드라인M", 400, 0, 0x81
+BEGIN
+    LTEXT           "프린터 아이피: ",IDC_STATIC,7,33,58,8
+    LTEXT           "사용자 이름: ",IDC_STATIC,7,66,60,8
+    LTEXT           "과 이름: ",IDC_STATIC,7,80,60,8
+    LTEXT           "비밀번호: ",IDC_STATIC,7,94,60,8
+    LTEXT           "아이피 주소:",IDC_STATIC,7,108,59,8
+    LTEXT           "네트워크 어댑터: ",IDC_STATIC,7,122,67,8
+    EDITTEXT        EDIT_PRINTER_IP,77,30,109,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "프린터 IP 추가 (SNMP = OFF)",BTN_PRINTER_IP,14,45,162,16
+    EDITTEXT        EDIT_USERNAME,77,64,109,12,ES_AUTOHSCROLL
+    EDITTEXT        EDIT_GROUPNAME,77,78,109,12,ES_AUTOHSCROLL
+    EDITTEXT        EDIT_PASSWORD,77,92,109,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        EDIT_IPV4_IP,77,106,109,12,ES_AUTOHSCROLL
+    COMBOBOX        COMBO_ADAPTER,77,120,109,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "적      용",BTN_START,14,135,162,16
+    CONTROL         "업무망",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,32,7,37,10
+    CONTROL         "인터넷망",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,129,7,43,10
+    PUSHBUTTON      "취소",IDCANCEL,71,7,50,16,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "농림축산식품부"
+            VALUE "FileDescription", "간편윈도우세팅"
+            VALUE "FileVersion", "1.2.0.0"
+            VALUE "InternalName", "EasySet.exe"
+            VALUE "LegalCopyright", "세종정부청사(농림축산식품부) All rights reserved."
+            VALUE "OriginalFilename", "EasySet.exe"
+            VALUE "ProductName", "이지세팅"
+            VALUE "ProductVersion", "1.2.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_EASYSET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "도움말"
+    BEGIN
+        MENUITEM "정보",                          MENU_HELO_INFO
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\Hacker.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "EasySet 정보(&A)..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING2101          "콘솔 1.0"
+    IDS_STRING2102          "user32.dll"
+    IDS_STRING2103          "LoadStringA"
+    IDS_STRING2104          "LoadStringW"
+    IDS_STRING2105          "kernel32.dll"
+    IDS_STRING2106          "LoadLibraryW"
+    IDS_STRING2107          "GetModuleHandleW"
+    IDS_STRING2108          "advapi32.dll"
+    IDS_STRING2109          "GetUserNameW"
+    IDS_STRING2110          "netapi32.dll"
+    IDS_STRING2111          "NetUserChangePassword"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING2112          "네트워크 어댑터: %s"
+    IDS_STRING2113          "cls"
+    IDS_STRING2114          "10.96."
+    IDS_STRING2115          "172.16."
+    IDS_STRING2116          "cscript c:\\windows\\system32\\printing_admin_scripts\\ko-KR\\prnport.vbs -a -r "
+    IDS_STRING2117          "%sIP_%s -h %s -o RAW -md -n 9100"
+    IDS_STRING2118          "프린터 포트: ""%s"" 추가"
+    IDS_STRING2119          "이름을 확인해주세요."
+    IDS_STRING2120          "작업 그룹을 입력해주세요."
+    IDS_STRING2121          """"""
+    IDS_STRING2122          "아이피의 뒤 2자리를 입력해주세요."
+    IDS_STRING2123          "*** 컴퓨터 이름을 ""%s"" 으로 변경합니다. ***"
+    IDS_STRING2124          "wmic ComputerSystem Where Name=""%%COMPUTERNAME%%"" Call Rename Name=""%s"""
+    IDS_STRING2125          "*** 작업 그룹을 ""%s"" 으로 변경합니다. ***"
+    IDS_STRING2126          "wmic ComputerSystem Where Name=""%%COMPUTERNAME%%"" Call JoinDomainOrWorkgroup Name=""%s"""
+    IDS_STRING2127          "*** 사용자 계정 이름을 ""%s"" 으로 변경합니다. ***"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING2128          "wmic UserAccount where Name=""%s"" Set FullName=""%s"""
+    IDS_STRING2129          "*** 윈도우 패스워드를 등록합니다. 입력하지 않았다면 제거됩니다. ***"
+    IDS_STRING2130          "net user %s %s"
+    IDS_STRING2131          "*** 어댑터 ""%s""의 ipv4 에 주소들을 입력합니다. ***"
+    IDS_STRING2132          "netsh interface ipv4 set address ""%s"" static %s %s %s"
+    IDS_STRING2133          "netsh interface ipv4 set dns ""%s"" static %s primary no"
+    IDS_STRING2134          "netsh interface ipv4 add dns ""%s"" %s index=2 no"
+    IDS_STRING2135          "diskmgmt.msc"
+    IDS_STRING2136          "shutdown -r -f -t 0"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\EasySet.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "afxres.rc"     // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
